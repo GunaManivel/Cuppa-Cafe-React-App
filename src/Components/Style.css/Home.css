@@ -1,0 +1,39 @@
+/* Home.css */
+.card {
+    background-color: #f8f9fa;
+    /* Set the background color for the cards */
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Add box shadow on hover */
+}
+
+.card-title {
+    font-weight: bold;
+font-family: 'Atomic Age';
+    font-size: 22px;
+    /* Make the card title bold */
+}
+
+.card-subtitle {
+    color: #6c757d;
+font-family: 'Atomic Age';
+font-size: 20px;
+    
+        
+    /* Change the color of the subtitle text */
+}
+
+.card-text {
+    margin-bottom: 10px;
+    font-family: 'Autour One';
+    /* Add some bottom margin to the card text */
+}
+
+.card-img-top {
+    height: 300px;
+    /* Set a fixed height for the card image */
+    object-fit: cover;
+    /* Make sure the image covers the entire space */
+}
