@@ -20,6 +20,11 @@ const Home = () => {
     }
   };
 
+  const handleBuyNow = (productId) => {
+    // Add your custom functionality here
+    alert(`Buy Now clicked for Product : ${productId}`);
+  };
+
   return (
     <div className="container">
       <h2
@@ -39,12 +44,18 @@ const Home = () => {
                 className="card-img-top"
                 alt="Product"
               />
-              <div className="card-body">
+              <div className="card-body d-flex flex-column">
                 <h5 className="card-title">{item.Product_name}</h5>
                 <h6 className="card-subtitle mb-2 text-muted">
                   Price: ${item.Product_price}
                 </h6>
                 <p className="card-text">{item.Product_description}</p>
+                <button
+                  className="btn btn-outline-warning mt-auto align-self-end"
+                  onClick={() => handleBuyNow(item.Product_name)}
+                >
+                  Buy Now
+                </button>
               </div>
             </div>
           </div>
